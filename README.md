@@ -1,18 +1,19 @@
-# 🌿 深维心迹 (MindTrace)
+# 🏝️ 心岛回响 (EchoIsle)
 
-> **写下你的答案，成为最懂自己的人。**  
-> 一套优雅、私密、结构化的高审美个人心智探索与深度自白系统。涵盖 **360 度个人说明书**、**MBTI 动力学测试**、**人生规划系统套卷** 与 **心智全景蓝图**。
+> **让每一次真诚的自省，在心岛激荡回响。**  
+> 一套优雅、私密、结构化的高审美个人心智探索与深度自白系统。涵盖 **360 度个人说明书**、**MBTI 动力学性格测评**、**人生规划系统套卷** 与 **心智全景蓝图**。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20PWA%20%7C%20Mobile-emerald.svg)]()
 [![Privacy](https://img.shields.io/badge/Privacy-LocalFirst%20%26%20Zero--Leak-blue.svg)]()
+[![Speed](https://img.shields.io/badge/Speed-PWA%20Offline%20Cache-green.svg)]()
 
 ---
 
 ## ✨ 核心特性
 
 ### 1. 🧭 探索大厅 (Topic Explorer)
-- **拒绝空洞无趣的碎片化社交**：涵盖【自我探索】、【人生规划】、【伴侣与亲密】、【哲学与世界】四大板块与数百道高浓度话题。
+- **拒绝空洞无趣的碎片化社交**：涵盖【自我探索】、【人生规划】、【伴侣与亲密】、【哲学与世界】四大板块与海量深度话题。
 - **专题聚焦抽卡**：支持按细分主题胶囊精准抽题，支持手机端随时【➕ 自建专属题目】。
 
 ### 2. 📘 个人说明书 (Personal Manual)
@@ -43,42 +44,20 @@
 
 ## 📱 手机端使用指南（添加到主屏幕体验媲美原生 App）
 
-本项目完全基于响应式流体布局与 **PWA (Progressive Web App)** 规范设计，无需安装任何客户端：
+本项目完全基于响应式流体布局与 **PWA (Progressive Web App)** 规范设计，内置 Service Worker 离线强缓存，无需安装任何客户端：
 
 ### 🍎 iOS (iPhone / iPad - Safari 浏览器)
 1. 在 Safari 中打开网站网址；
 2. 点击浏览器底部中央的 **“分享”** 按钮（方框带向上箭头）；
 3. 向下滑动并选择 **“添加到主屏幕” (Add to Home Screen)**；
-4. 此时手机桌面即会生成专属的治愈系应用图标，点击即可全屏无地址栏沉浸式启动！
+4. 此时手机桌面即会生成专属的心岛应用图标，点击即可全屏无地址栏沉浸式启动！
 
 ### 🤖 Android (Chrome / Edge / 微信)
 1. 在手机浏览器中打开网站网址；
-2. 点击右上角菜单（三个点），选择 **“添加到主屏幕”** 或 **“安装应用”** 即可。
+2. 点击右上角菜单（三个点），选择 **“添加到桌面”** 或 **“安装应用”** 即可。
 
 ---
 
-## 🚀 部署到 GitHub Pages (30 秒全免费上线)
+## 🚀 免费公用在线地址
 
-1. 在 GitHub 上新建一个公开仓库（如 `mind-trace`）。
-2. 将本目录代码推送到仓库：
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: 初始发布深维心迹公共网站"
-   git branch -M main
-   git remote add origin https://github.com/<你的GitHub用户名>/<仓库名>.git
-   git push -u origin main
-   ```
-3. 打开仓库的 **Settings** -> 左侧点击 **Pages**：
-   - **Branch** 选择 `main`，文件夹选择 `/(root)`；
-   - 点击 **Save**。
-4. 等待 1 分钟，你的专属公用网站即可在全球通过以下网址免费访问：
-   ```
-   https://<你的GitHub用户名>.github.io/<仓库名>/
-   ```
-
----
-
-## 📄 开源许可
-
-本项目遵循 [MIT License](LICENSE) 开源协议。
+- 网址：`https://hyh712.github.io/mind-trace/`
