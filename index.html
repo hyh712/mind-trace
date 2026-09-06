@@ -653,6 +653,273 @@ main { flex: 1; max-width: 1320px; width: 100%; margin: 0 auto; padding: 1.75rem
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+
+/* ==========================================================================
+   移动端专业级自适应响应式系统 (Mobile Responsive Stylesheet)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 顶栏 Header 压至 52px，彻底隐藏挤爆屏幕的长条导航，杜绝任何文字竖排或穿透覆盖 */
+  header {
+    height: 52px !important;
+    padding: 0 0.85rem !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 900 !important;
+    background: rgba(252, 249, 246, 0.96) !important;
+    border-bottom: 1px solid rgba(228, 220, 212, 0.9) !important;
+  }
+  .logo-area {
+    gap: 0.45rem !important;
+  }
+  .logo-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 1.05rem !important;
+    border-radius: 10px !important;
+  }
+  .logo-text h1 {
+    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+  }
+  .logo-text p {
+    display: none !important;
+  }
+
+  /* 隐藏桌面端顶栏长按钮组 */
+  .nav-list {
+    display: none !important;
+  }
+
+  /* 移动端顶栏右侧快捷轻按钮 */
+  .mobile-header-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+  }
+  .mobile-header-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+    border: 1px solid var(--card-border) !important;
+    background: #fff !important;
+    font-size: 0.95rem !important;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+  }
+
+  /* 主容器 Main 留足底部 70px 空间，保证滑动到末尾不被 TabBar 遮挡 */
+  main {
+    padding: 0.85rem 0.85rem 5.8rem !important;
+  }
+
+  /* 探索大厅头部 */
+  .explore-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .explore-header .page-title h2 {
+    font-size: 1.25rem !important;
+  }
+  .explore-header .page-title p {
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+  }
+  .explore-header > div:last-child {
+    display: flex !important;
+    width: 100% !important;
+    gap: 0.5rem !important;
+  }
+  .explore-header > div:last-child .btn {
+    flex: 1 !important;
+    padding: 0.55rem 0.4rem !important;
+    font-size: 0.82rem !important;
+    justify-content: center !important;
+  }
+
+  /* 筛选卡片与搜索条优化 */
+  .filter-card {
+    padding: 0.85rem !important;
+    margin-bottom: 1rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .filter-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.45rem !important;
+    margin-bottom: 0.85rem !important;
+  }
+  .filter-label {
+    min-width: unset !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    color: var(--text-muted) !important;
+  }
+  .chip-group {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.35rem !important;
+  }
+  .chip {
+    padding: 0.32rem 0.65rem !important;
+    font-size: 0.78rem !important;
+  }
+  .search-input-wrap {
+    width: 100% !important;
+  }
+  .search-input {
+    width: 100% !important;
+    font-size: 0.82rem !important;
+    padding: 0.5rem 0.75rem 0.5rem 2.2rem !important;
+  }
+  #matchCountText {
+    margin-left: 0 !important;
+    text-align: right !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* 题目卡片单列布局 */
+  .topics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+  .topic-card {
+    padding: 1rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .topic-q {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  /* 说明书移动端样式 */
+  .manual-hero {
+    padding: 1.1rem 1rem !important;
+    border-radius: var(--radius-md) !important;
+    margin-bottom: 1rem !important;
+  }
+  .manual-hero::after {
+    display: none !important;
+  }
+  .manual-hero-title {
+    font-size: 1.15rem !important;
+  }
+  .manual-hero-desc {
+    font-size: 0.8rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.85rem !important;
+  }
+  .manual-stats-bar {
+    padding: 0.55rem 0.75rem !important;
+    gap: 0.65rem !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .manual-stats-bar > div:last-child {
+    display: flex !important;
+    gap: 0.45rem !important;
+    width: 100% !important;
+  }
+  .manual-stats-bar > div:last-child .btn {
+    flex: 1 !important;
+    font-size: 0.75rem !important;
+    padding: 0.42rem 0.3rem !important;
+    justify-content: center !important;
+  }
+  .manual-section-container {
+    padding: 0.85rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .manual-q-box {
+    padding: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* 系统套卷与蓝图移动端卡片 */
+  .suites-container {
+    padding: 0 !important;
+  }
+  .suite-card {
+    padding: 1rem !important;
+  }
+
+  /* 弹窗适配屏幕 */
+  .modal-card, .modal-content {
+    width: 95% !important;
+    max-width: 95% !important;
+    margin: 1rem auto !important;
+    padding: 1.15rem 1rem !important;
+    max-height: 88vh !important;
+  }
+
+  /* 移动端专属吸底 TabBar */
+  .mobile-tabbar {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-top: 1px solid rgba(228, 220, 212, 0.85) !important;
+    padding-top: 5px !important;
+    padding-bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    box-shadow: 0 -4px 16px rgba(43, 39, 37, 0.06) !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+  .mobile-tab-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+    color: #79716b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mobile-tab-icon {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    transition: transform 0.2s ease;
+  }
+  .mobile-tab-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+  }
+  .mobile-tab-item.active {
+    color: var(--primary) !important;
+  }
+  .mobile-tab-item.active .mobile-tab-icon {
+    transform: scale(1.12);
+  }
+  .mobile-tab-item.active .mobile-tab-label {
+    font-weight: 700;
+  }
+}
+
+/* 桌面端隐藏手机端独有组件 */
+@media (min-width: 769px) {
+  .mobile-tabbar {
+    display: none !important;
+  }
+  .mobile-header-actions {
+    display: none !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -662,11 +929,15 @@ main { flex: 1; max-width: 1320px; width: 100%; margin: 0 auto; padding: 1.75rem
   <div class="logo-area" onclick="switchView('explore')">
     <div class="logo-icon">🌿</div>
     <div class="logo-text">
-      <h1>心灵工坊 · 深度探索</h1>
-      <p>问题探索 · 个人说明书 · 全景心智蓝图</p>
+      <h1>深维心迹</h1>
+      <p>深度自省 · 个人说明书 · 心智蓝图</p>
     </div>
   </div>
 
+  <div class="mobile-header-actions">
+    <button class="mobile-header-btn" onclick="openCloudModal()" title="云同步状态" id="mobileCloudBtn">☁️</button>
+    <button class="mobile-header-btn" onclick="switchView('settings')" title="设置">⚙️</button>
+  </div>
   <nav class="nav-list">
     <button class="nav-btn active" onclick="switchView('explore')">
       <span>🧭</span> 探索大厅
@@ -2275,6 +2546,14 @@ function showToast(msg) {
 function switchView(viewName) {
   document.querySelectorAll('.view-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.mobile-tab-item').forEach(b => b.classList.remove('active'));
+
+  const mobileTabs = document.querySelectorAll('.mobile-tab-item');
+  mobileTabs.forEach(btn => {
+    if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(viewName)) {
+      btn.classList.add('active');
+    }
+  });
 
   const sec = document.getElementById('view-' + viewName);
   if (sec) sec.classList.add('active');
@@ -4177,5 +4456,30 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 </script>
+
+<!-- 移动端原生吸底 TabBar (类似微信小程序，单手掌控全站) -->
+<nav class="mobile-tabbar" id="mobileTabBar">
+  <button class="mobile-tab-item active" onclick="switchView('explore')">
+    <span class="mobile-tab-icon">🧭</span>
+    <span class="mobile-tab-label">探索大厅</span>
+  </button>
+  <button class="mobile-tab-item" onclick="switchView('manual')">
+    <span class="mobile-tab-icon">📘</span>
+    <span class="mobile-tab-label">说明书</span>
+  </button>
+  <button class="mobile-tab-item" onclick="switchView('suites')">
+    <span class="mobile-tab-icon">📜</span>
+    <span class="mobile-tab-label">系统套卷</span>
+  </button>
+  <button class="mobile-tab-item" onclick="switchView('capsule')">
+    <span class="mobile-tab-icon">⏳</span>
+    <span class="mobile-tab-label">时光胶囊</span>
+  </button>
+  <button class="mobile-tab-item" onclick="switchView('blueprint')">
+    <span class="mobile-tab-icon">🌟</span>
+    <span class="mobile-tab-label">心智蓝图</span>
+  </button>
+</nav>
+
 </body>
 </html>
