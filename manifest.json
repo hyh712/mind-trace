@@ -1,0 +1,23 @@
+{
+  "name": "深维心迹 · 深度自省与个人说明书",
+  "short_name": "深维心迹",
+  "description": "一套结构化的个人心智探索、深度话题自省、360度个人说明书与时光胶囊系统。",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fcf9f6",
+  "theme_color": "#c97d60",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./images/apple-touch-icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
